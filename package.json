@@ -1,9 +1,37 @@
 {
+  "name": "tkserver",
+  "version": "1.6.9",
+  "description": "A simple comment system.",
+  "keywords": [
+    "twikoo",
+    "twikoojs",
+    "comment",
+    "comment-system"
+  ],
+  "author": "imaegoo <hello@imaegoo.com> (https://github.com/imaegoo)",
+  "license": "MIT",
+  "main": "server.js",
+  "bin": {
+    "tkserver": "server.js"
+  },
   "scripts": {
     "build": "cd .",
-    "start": "tkserver"
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imaegoo/twikoo.git"
+  },
+  "homepage": "https://twikoo.js.org",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "tkserver": "^1.6.9"
+    "get-user-ip": "^1.0.1",
+    "lokijs": "^1.5.12",
+    "mongodb": "^3.6.3",
+    "twikoo-func": "1.6.9",
+    "uuid": "^8.3.2"
   }
 }
