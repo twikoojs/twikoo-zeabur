@@ -1,23 +1,11 @@
-# Twikoo 私有部署服务端
+# Twikoo Zeabur 服务端
 
-## 安装
+注意：Zeabur 未来可能会收费，请谨慎选择部署平台。
 
-```
-npm i -g tkserver
-```
+## 部署步骤
 
-## 启动
-
-```
-tkserver
-```
-
-## 环境变量
-
-| 名称 | 描述 | 默认值 |
-| ---- | ---- | ---- |
-| `TWIKOO_DATA` | 数据库存储路径 | `./data` |
-| `TWIKOO_PORT` | 端口号 | `8080` |
-| `TWIKOO_THROTTLE` | IP 请求限流，当同一 IP 短时间内请求次数超过阈值将对该 IP 返回错误 | `250` |
-| `TWIKOO_LOCALHOST_ONLY` | 为`true`时只监听本地请求，使得 nginx 等服务器反代之后不暴露原始端口 | `null` |
-| `TWIKOO_IP_HEADERS` | 在一些特殊情况下使用，如使用了`CloudFlare CDN` 它会将请求 IP 写到请求头的 `cf-connecting-ip` 字段上，为了能够正确的获取请求 IP 你可以写成 `['headers.cf-connecting-ip']` | `[]` |
+1. 在 Zeabur 部署新服务 - 部署其他服务 - 部署 MongoDB，名称随意
+2. 在 GitHub 上 fork 本仓库
+3. 在 Zeabur 部署新服务 - 部署你的源代码 - 授权 GitHub - 选择刚才 fork 的仓库，名称随意
+4. 部署好后点开环境 - 设置 - 域名，绑定一个域名（例如 `mytwikoo.zeabur.app`）
+5. 到博客配置文件中配置 envId 为 `https://mytwikoo.zeabur.app`
