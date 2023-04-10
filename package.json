@@ -4,6 +4,6 @@
     "start": "tkserver"
   },
   "dependencies": {
-    "tkserver": "^1.6.13"
+    "tkserver": "^1.6.14"
   }
 }
