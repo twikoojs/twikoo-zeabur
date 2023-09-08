@@ -1,1 +1,9 @@
-{}
+{
+  "scripts": {
+    "build": "cd .",
+    "start": "tkserver"
+  },
+  "dependencies": {
+    "tkserver": "^1.6.18"
+  }
+}
