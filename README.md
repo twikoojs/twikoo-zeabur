@@ -1,8 +1,8 @@
-# Twikoo 服务端
+# Twikoo 云函数
 
 ## 部署
 
-请查看 [Railway 部署](https://twikoo.js.org/quick-start.html#railway-%E9%83%A8%E7%BD%B2) 和 [Zeabur 部署](https://twikoo.js.org/quick-start.html#zeabur-%E9%83%A8%E7%BD%B2)，选择其中一种方式部署即可。
+请查看 [Railway 部署](https://twikoo.js.org/backend.html#railway-部署) 和 [Zeabur 部署](https://twikoo.js.org/backend.html#zeabur-部署)，选择其中一种方式部署即可。
 
 请一定要创建 MongoDB，不创建 MongoDB 也能正常使用，但重新部署后数据会丢失。
 
